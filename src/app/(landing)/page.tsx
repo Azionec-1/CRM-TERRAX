@@ -7,7 +7,7 @@ export default function LandingPage() {
     <main className="min-h-screen bg-neutral-50">
       <section className="mx-auto grid min-h-screen max-w-6xl gap-8 px-6 py-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
         <div>
-          <span className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-700">
+          <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-800">
             <Building2 className="size-4" />
             Terrax Construccion
           </span>
@@ -29,7 +29,7 @@ export default function LandingPage() {
               href="https://terrax.pe/"
               target="_blank"
               rel="noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-lg bg-orange-600 px-4 py-2.5 font-medium text-white hover:bg-orange-700"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2.5 font-medium text-white hover:bg-slate-800"
             >
               Ir a la web principal
               <ArrowRight className="size-4" />

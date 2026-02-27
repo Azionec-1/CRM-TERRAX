@@ -63,8 +63,8 @@ export default async function CrmDashboardPage() {
           value={potential}
           subtitle="Nuevas oportunidades"
           icon={Building2}
-          colorClass="text-orange-600"
-          bgColorClass="bg-orange-50"
+          colorClass="text-emerald-700"
+          bgColorClass="bg-emerald-100"
         />
         <StatCard
           title="Clientes inactivos"

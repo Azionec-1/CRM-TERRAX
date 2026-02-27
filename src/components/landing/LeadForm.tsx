@@ -65,7 +65,7 @@ export default function LeadForm() {
           placeholder="Nombre completo"
           value={form.fullName}
           onChange={(event) => setForm((prev) => ({ ...prev, fullName: event.target.value }))}
-          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-orange-500 focus:ring-2"
+          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
         />
         <input
           type="email"
@@ -73,19 +73,19 @@ export default function LeadForm() {
           placeholder="Email"
           value={form.email}
           onChange={(event) => setForm((prev) => ({ ...prev, email: event.target.value }))}
-          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-orange-500 focus:ring-2"
+          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
         />
         <input
           placeholder="Telefono"
           value={form.phone}
           onChange={(event) => setForm((prev) => ({ ...prev, phone: event.target.value }))}
-          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-orange-500 focus:ring-2"
+          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
         />
         <input
           placeholder="Empresa"
           value={form.company}
           onChange={(event) => setForm((prev) => ({ ...prev, company: event.target.value }))}
-          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-orange-500 focus:ring-2"
+          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
         />
         <select
           value={form.serviceType}
@@ -95,7 +95,7 @@ export default function LeadForm() {
               serviceType: event.target.value as "CONSTRUCTION" | "VIRTUAL_CLASSROOM",
             }))
           }
-          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-orange-500 focus:ring-2"
+          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
         >
           <option value="CONSTRUCTION">Servicios de construccion</option>
           <option value="VIRTUAL_CLASSROOM">Aula virtual</option>
@@ -105,14 +105,14 @@ export default function LeadForm() {
           placeholder="Cuentanos tu necesidad"
           value={form.message}
           onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
-          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-orange-500 focus:ring-2"
+          className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
         />
       </div>
 
       <button
         type="submit"
         disabled={loading}
-        className="mt-5 w-full rounded-lg bg-orange-600 px-4 py-2.5 font-medium text-white transition-colors hover:bg-orange-700 disabled:cursor-not-allowed disabled:opacity-70"
+        className="mt-5 w-full rounded-lg bg-slate-900 px-4 py-2.5 font-medium text-white transition-colors hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-70"
       >
         {loading ? "Enviando..." : "Enviar consulta"}
       </button>

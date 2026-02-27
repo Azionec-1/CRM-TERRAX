@@ -44,14 +44,14 @@ export function ClientsTable({ initialLeads }: ClientsTableProps) {
             value={search}
             onChange={(event) => setSearch(event.target.value)}
             placeholder="Buscar por nombre, email o empresa..."
-            className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-orange-500 focus:ring-2"
+            className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
           />
           <select
             value={filter}
             onChange={(event) =>
               setFilter(event.target.value as "ALL" | "ACTIVE" | "INACTIVE" | "POTENTIAL")
             }
-            className="rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-orange-500 focus:ring-2"
+            className="rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
           >
             <option value="ALL">Todos los estados</option>
             <option value="ACTIVE">Activos</option>
@@ -93,7 +93,7 @@ export function ClientsTable({ initialLeads }: ClientsTableProps) {
                         event.target.value as "ACTIVE" | "INACTIVE" | "POTENTIAL",
                       )
                     }
-                    className="rounded-lg border border-neutral-300 px-2 py-1.5 text-xs outline-none ring-orange-500 focus:ring-2"
+                    className="rounded-lg border border-neutral-300 px-2 py-1.5 text-xs outline-none ring-slate-900 focus:ring-2"
                   >
                     <option value="ACTIVE">Activo</option>
                     <option value="POTENTIAL">Potencial</option>

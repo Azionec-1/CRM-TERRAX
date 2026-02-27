@@ -22,7 +22,7 @@ export function Sidebar() {
         {open ? (
           <>
             <div className="flex items-center gap-2">
-              <Building2 className="size-8 text-orange-600" />
+              <Building2 className="size-8 text-emerald-700" />
               <span className="text-xl font-bold text-neutral-900">TERRAX</span>
             </div>
             <button
@@ -56,7 +56,7 @@ export function Sidebar() {
               href={item.href}
               className={`flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors ${
                 active
-                  ? "bg-orange-50 text-orange-600"
+                  ? "bg-emerald-100 text-emerald-700"
                   : "text-neutral-700 hover:bg-neutral-100"
               }`}
             >
