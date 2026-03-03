@@ -34,6 +34,14 @@ export class PrismaLeadRepository implements LeadRepository {
     return updated as Lead;
   }
 
+  async updateNotes(id: string, notes: string | null): Promise<Lead> {
+    const updated = await this.prisma.lead.update({
+      where: { id },
+      data: { notes },
+    });
+    return updated as Lead;
+  }
+
   countByStatus(status: LeadStatus): Promise<number> {
     return this.prisma.lead.count({
       where: { status },

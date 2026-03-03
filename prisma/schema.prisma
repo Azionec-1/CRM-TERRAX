@@ -41,6 +41,7 @@ model Lead {
   phone       String?
   company     String?
   message     String?
+  notes       String?
   serviceType LeadServiceType
   status      LeadStatus      @default(POTENTIAL)
   createdAt   DateTime        @default(now())

@@ -7,6 +7,7 @@ export interface Lead {
   phone: string | null;
   company: string | null;
   message: string | null;
+  notes: string | null;
   serviceType: LeadServiceType;
   status: LeadStatus;
   createdAt: Date;

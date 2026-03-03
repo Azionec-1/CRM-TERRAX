@@ -12,3 +12,7 @@ export const leadSchema = z.object({
 export const leadStatusSchema = z.object({
   status: z.enum(["ACTIVE", "INACTIVE", "POTENTIAL"]),
 });
+
+export const leadNotesSchema = z.object({
+  notes: z.string().max(2000).optional().or(z.literal("")),
+});

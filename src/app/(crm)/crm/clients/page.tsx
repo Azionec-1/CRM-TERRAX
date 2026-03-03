@@ -22,6 +22,7 @@ export default async function ClientsPage() {
     phone: lead.phone,
     company: lead.company,
     message: lead.message,
+    notes: lead.notes,
     serviceType: lead.serviceType as "CONSTRUCTION" | "VIRTUAL_CLASSROOM",
     status: lead.status as "ACTIVE" | "INACTIVE" | "POTENTIAL",
     createdAt: lead.createdAt.toISOString(),
