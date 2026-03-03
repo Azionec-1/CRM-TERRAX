@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import { compare } from "bcryptjs";
 import { z } from "zod";
 import { prisma } from "@/lib/db";
@@ -14,7 +14,7 @@ export async function POST(request: Request) {
   const parsed = loginSchema.safeParse(payload);
 
   if (!parsed.success) {
-    return NextResponse.json({ message: "Credenciales invalidas" }, { status: 400 });
+    return NextResponse.json({ message: "Credenciales inválidas" }, { status: 400 });
   }
 
   const user = await prisma.user.findUnique({
@@ -47,3 +47,4 @@ export async function POST(request: Request) {
 
   return response;
 }
+

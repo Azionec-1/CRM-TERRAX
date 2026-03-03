@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRouter } from "next/navigation";
 
@@ -17,7 +17,8 @@ export function LogoutButton() {
       onClick={handleLogout}
       className="rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-100"
     >
-      Cerrar sesion
+      Cerrar sesión
     </button>
   );
 }
+

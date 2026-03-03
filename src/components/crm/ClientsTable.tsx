@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import { formatServiceType } from "@/lib/utils";
@@ -129,7 +129,7 @@ export function ClientsTable({ initialLeads }: ClientsTableProps) {
                 </td>
                 <td className="p-4">
                   <p className="text-neutral-800">{lead.email}</p>
-                  <p className="text-xs text-neutral-500">{lead.phone || "Sin telefono"}</p>
+                  <p className="text-xs text-neutral-500">{lead.phone || "Sin teléfono"}</p>
                 </td>
                 <td className="p-4 text-neutral-700">{formatServiceType(lead.serviceType)}</td>
                 <td className="p-4">
@@ -199,7 +199,7 @@ export function ClientsTable({ initialLeads }: ClientsTableProps) {
                   Consulta enviada
                 </p>
                 <p className="text-sm text-neutral-700">
-                  {selectedLead.message?.trim() || "Este cliente no envio descripcion en el formulario."}
+                  {selectedLead.message?.trim() || "Este cliente no envió descripción en el formulario."}
                 </p>
               </div>
 
@@ -235,3 +235,4 @@ export function ClientsTable({ initialLeads }: ClientsTableProps) {
     </div>
   );
 }
+

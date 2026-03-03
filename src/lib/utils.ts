@@ -1,5 +1,5 @@
-export function formatServiceType(serviceType: string) {
-  return serviceType === "CONSTRUCTION" ? "Servicios de construccion" : "Aula virtual";
+﻿export function formatServiceType(serviceType: string) {
+  return serviceType === "CONSTRUCTION" ? "Servicios de construcción" : "Aula virtual";
 }
 
 export function formatLeadStatus(status: string) {
@@ -7,3 +7,4 @@ export function formatLeadStatus(status: string) {
   if (status === "INACTIVE") return "Inactivo";
   return "Potencial";
 }
+

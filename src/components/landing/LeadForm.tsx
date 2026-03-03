@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 
@@ -54,7 +54,7 @@ export default function LeadForm() {
 
   return (
     <form onSubmit={onSubmit} className="rounded-xl border border-neutral-200 bg-white p-6">
-      <h2 className="mb-1 text-2xl font-semibold text-neutral-900">Solicita informacion</h2>
+      <h2 className="mb-1 text-2xl font-semibold text-neutral-900">Solicita información</h2>
       <p className="mb-5 text-sm text-neutral-600">
         Completa el formulario para que el equipo comercial te contacte.
       </p>
@@ -76,7 +76,7 @@ export default function LeadForm() {
           className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
         />
         <input
-          placeholder="Telefono"
+          placeholder="Teléfono"
           value={form.phone}
           onChange={(event) => setForm((prev) => ({ ...prev, phone: event.target.value }))}
           className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
@@ -97,12 +97,12 @@ export default function LeadForm() {
           }
           className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
         >
-          <option value="CONSTRUCTION">Servicios de construccion</option>
+          <option value="CONSTRUCTION">Servicios de construcción</option>
           <option value="VIRTUAL_CLASSROOM">Aula virtual</option>
         </select>
         <textarea
           rows={4}
-          placeholder="Cuentanos tu necesidad"
+          placeholder="Cuéntanos tu necesidad"
           value={form.message}
           onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
           className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 outline-none ring-slate-900 focus:ring-2"
@@ -122,3 +122,4 @@ export default function LeadForm() {
     </form>
   );
 }
+

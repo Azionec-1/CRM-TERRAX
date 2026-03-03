@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -24,13 +24,13 @@ export default function LoginPage() {
       });
 
       if (!response.ok) {
-        throw new Error("Credenciales invalidas");
+        throw new Error("Credenciales inválidas");
       }
 
       router.push("/crm");
       router.refresh();
     } catch {
-      setError("No fue posible iniciar sesion. Verifica email y contraseña.");
+      setError("No fue posible iniciar sesión. Verifica email y contraseña.");
     } finally {
       setLoading(false);
     }
@@ -45,7 +45,7 @@ export default function LoginPage() {
           </div>
           <div>
             <h1 className="text-2xl font-bold text-neutral-900">Acceso CRM Terrax</h1>
-            <p className="text-sm text-neutral-600">Inicia sesion para gestionar leads.</p>
+            <p className="text-sm text-neutral-600">Inicia sesión para gestionar leads.</p>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ export default function LoginPage() {
             disabled={loading}
             className="w-full rounded-lg bg-slate-900 px-4 py-2.5 font-medium text-white hover:bg-slate-800 disabled:opacity-70"
           >
-            {loading ? "Ingresando..." : "Iniciar sesion"}
+            {loading ? "Ingresando..." : "Iniciar sesión"}
           </button>
         </form>
 
@@ -81,3 +81,4 @@ export default function LoginPage() {
     </main>
   );
 }
+

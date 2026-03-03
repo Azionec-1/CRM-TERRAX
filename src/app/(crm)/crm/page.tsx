@@ -1,4 +1,4 @@
-import { Building2, UserCheck, UserRoundX, Users } from "lucide-react";
+﻿import { Building2, UserCheck, UserRoundX, Users } from "lucide-react";
 import { StatCard } from "@/components/crm/StatCard";
 import { prisma } from "@/lib/db";
 import { formatServiceType } from "@/lib/utils";
@@ -38,7 +38,7 @@ export default async function CrmDashboardPage() {
     <div className="p-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-neutral-900">Dashboard</h1>
-        <p className="text-neutral-600">Resumen de captacion y estado de clientes Terrax.</p>
+        <p className="text-neutral-600">Resumen de captación y estado de clientes Terrax.</p>
       </div>
 
       <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -53,7 +53,7 @@ export default async function CrmDashboardPage() {
         <StatCard
           title="Clientes activos"
           value={active}
-          subtitle="En gestion comercial"
+          subtitle="En gestión comercial"
           icon={UserCheck}
           colorClass="text-green-600"
           bgColorClass="bg-green-50"
@@ -82,7 +82,7 @@ export default async function CrmDashboardPage() {
         </div>
         <div className="divide-y divide-neutral-200">
           {recent.length === 0 && (
-            <p className="p-5 text-neutral-500">Aun no hay leads registrados desde la landing.</p>
+            <p className="p-5 text-neutral-500">Aún no hay leads registrados desde la landing.</p>
           )}
           {recent.map((lead) => (
             <div key={lead.id} className="grid gap-3 p-5 md:grid-cols-5">
@@ -100,3 +100,4 @@ export default async function CrmDashboardPage() {
     </div>
   );
 }
+

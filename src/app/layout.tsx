@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 
@@ -8,8 +8,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Terrax | Captacion y CRM",
-  description: "Landing de captacion y CRM basico para Terrax",
+  title: "Terrax | Captación y CRM",
+  description: "Landing de captación y CRM básico para Terrax",
 };
 
 export default function RootLayout({
@@ -23,3 +23,4 @@ export default function RootLayout({
     </html>
   );
 }
+

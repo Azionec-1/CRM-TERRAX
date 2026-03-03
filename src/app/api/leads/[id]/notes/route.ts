@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import { PrismaLeadRepository } from "@/modules/leads/infrastructure/prisma/PrismaLeadRepository";
 import { leadNotesSchema } from "@/modules/leads/presentation/validators/lead.schema";
 import { prisma } from "@/lib/db";
@@ -15,7 +15,7 @@ export async function PATCH(request: Request, { params }: RouteParams) {
   const result = leadNotesSchema.safeParse(body);
 
   if (!result.success) {
-    return NextResponse.json({ message: "Notas invalidas" }, { status: 400 });
+    return NextResponse.json({ message: "Notas inválidas" }, { status: 400 });
   }
 
   try {
@@ -26,3 +26,4 @@ export async function PATCH(request: Request, { params }: RouteParams) {
     return NextResponse.json({ message: "Lead no encontrado" }, { status: 404 });
   }
 }
+

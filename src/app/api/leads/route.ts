@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import { CreateLead } from "@/modules/leads/application/use-cases/CreateLead";
 import { ListLeads } from "@/modules/leads/application/use-cases/ListLeads";
 import { PrismaLeadRepository } from "@/modules/leads/infrastructure/prisma/PrismaLeadRepository";
@@ -13,7 +13,7 @@ export async function POST(request: Request) {
 
   if (!result.success) {
     return NextResponse.json(
-      { message: "Datos invalidos", error: result.error.flatten() },
+      { message: "Datos inválidos", error: result.error.flatten() },
       { status: 400 },
     );
   }
@@ -34,3 +34,4 @@ export async function GET() {
   const leads = await listLeads.execute();
   return NextResponse.json(leads);
 }
+
