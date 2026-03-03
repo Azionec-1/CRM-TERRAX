@@ -1,4 +1,5 @@
 ﻿import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Building2 } from "lucide-react";
 import LeadForm from "@/components/landing/LeadForm";
 
@@ -47,7 +48,16 @@ export default function LandingPage() {
 
         <LeadForm />
       </section>
+
+      <Link
+        href="https://wa.me/message/5YEQKWW7APY7A1"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chatear por WhatsApp"
+        className="fixed bottom-6 right-6 z-50 inline-flex h-16 w-16 items-center justify-center overflow-hidden rounded-full shadow-[0_10px_25px_rgba(0,0,0,0.25)] transition-transform hover:scale-110"
+      >
+        <Image src="/WhatsApp.jpg" alt="WhatsApp" width={64} height={64} priority />
+      </Link>
     </main>
   );
 }
-
